@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Mastery | Joy Ghorami</title>
+  </head>
+  <body>
+    <header>
+      <h1>Professional Admin Dashboard (pure HTML)</h1>
+      <nav>
+        <details>
+          <summary>Main Navigation Menu (Click to Expand)</summary>
+          <ul>
+            <li><a href="#project">Project Inventory</a></li>
+            <li><a href="#registration">Advanced Registration</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#media">Media Gallery</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+    <hr>
+    
+    <main>
+      <section id="inventory">
+        <h2>Project Inventory Report</h2>
+        <table border="2" cellpadding="10" cellspacing="0">
+          <colgroup>
+            <col style="background-color:#f2f2f2" span="1">
+          </colgroup>
+          <thead>
+            <tr>
+              <th rowspan="2">Project Title</th>
+              <th colspan="2">Details</th>
+              <th rowspan="2">Completion Progress</th>
+            </tr>
+            <tr>
+              <th>Category</th>
+              <th>Budget</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>E-Commerce System</td>
+              <td>Web Development</td>
+              <td>$1,500</td>
+              <td>
+                <progress value="75" max="100"></progress> 75%
+              </td>
+            </tr>
+             <tr>
+              <td>Personal Portfolio</td>
+              <td>Web Design</td>
+              <td>$400</td>
+              <td>
+                <progress value="100" max="100"></progress> 100%
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3"><strong>Total Estimated Valuation</strong></td>
+              <td><strong>$1,900</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+        
+      </section>
+      <hr>
+      
+      <section id="registration">
+        <h2>User Profile Configuration</h2>
+  
+        <form action="#" method="post">
+           <fieldset>
+          <legend>Technical Identity & Skills</legend>
+          <label for="country"><strong>Select Country:</strong></label><br>
+          <input list="countries" id="country" name="country" placeholder="Start typing country...">
+          
+            <datalist id="countries">
+              <option value="Bangladesh"></option>
+              <option value="USA"></option>
+              <option value="United Kingdom"></option>
+              <option value="Canada"></option>
+              <option value="Germany"></option>
+            </datalist>
+            <br><br>
+            
+            <label for="skills-select" id="skills"><strong>Primary Tech Stack:</strong></label><br>
+            <select id="skills-select" name="skills-select">
+              <optgroup label="Frontend Engineering">
+                <option value="html">HTML5/CSS3</option>
+                <option value="react">React Js</option>
+                <option value="js">Pure Javascript</option>
+              </optgroup>
+              
+              <optgroup label="Backend Engineering">
+                <option value="node">Node Js</option>
+                <option value="php">PHP/Laravel</option>
+                <option value="python">Python/Django</option>
+              </optgroup>
+            </select>
+            <br><br>
+            
+            <label for="proficiency"><strong>Proficiency Level (0-100%):</strong></label><br>
+            <input type="range" id="proficiency" name="proficiency" min="0" max="100" value="50">
+            <br><br>
+            <label for="theme-color"><strong>Preferred Dashboard Theme:</strong></label><br>
+            <input type="color" id="theme-color" name="theme-color" value="red"><br><br>
+            <button type="submit">Submit Settings</button>
+            <button type="reset">Reset Form</button>
+            
+          </fieldset>
+        </form>
+      </section>
+      <hr>
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Why is HTML important for developers?</summary>
+          <p>HTMl Provides the structure of the web. Without it, there would be no content to style or interact with.</p>
+        </details>
+        
+        <details>
+          <summary>What is the benefit of Semantic Tags?</summary>
+          <p>Semantic tags like &lt;main&gt;, &lt;article&gt;, and &lt;section&gt; improve SEO and help screen readers understand your page better.</p>
+        </details>
+      </section>
+      <hr>
+      
+      <section id="media">
+        <h2>Project Demo Video</h2>
+        <figure>
+        <video controls width="200" poster="thumbnail.jpg">
+          <source src="VID_20260222_211548_597.mp4" type="video/mp4">
+          <track src="captions_en.vtt" srclang="english" kind="subtitles" label="english">
+          your browser does not support the video tag!
+        </video>
+        <figcaption>Video sample: Software Engineer Workflow</figcaption>
+        </figure>
+        
+        <p>Listen to Introductory Audio:</p>
+        <audio controls>
+          <source src="joy ring tone.mp3" type="audio/mpeg">
+          audio playback is not support?
+        </audio>
+      </section>
+      <hr>
+      <section id="integration">
+        <h2>External Integration</h2>
+        <p>Embedded Content Preview:</p>
+        <iframe src="about:blank" height="200" width="100%" title="reference document"></iframe>
+        <p><small>*Replace &quot;about:blank&quot; with your own &quot;portfolio.html&quot; to see it inside this box</small></p>
+      </section>
+    </main>
+    <br>
+    <footer>
+     <p>&copy; 2026 Joy Ghorami | Software Engineering Aspirant</p>
+      <address>
+        Written by <a href="mailto:joygorami432@gmail.com" target="_blank" rel="noopener noreferrer"> Joy Ghorami</a><br>
+        Dhaka, Bangladesh
+      </address>
+    </footer>
+  </body>
+</html>
