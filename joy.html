@@ -3,164 +3,208 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced HTML Mastery | Joy Ghorami</title>
-  </head>
+    <title>My personal Biodata</title>
+    <style>
+      img{
+        border-radius: 50%;
+        border: 2px solid #2ed573;
+        margin-bottom: 5px;
+      }
+      figure{
+        text-align: center;
+        display: block;
+        padding: 20px;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0 auto;
+        color: #eb4d4b;
+        padding-bottom: 0px;
+        font-size: 18px;
+      }
+      hr{
+        margin-bottom: 5px;
+        border: 1px solid #2f3542;}
+      h2{color: #5352ed; }
+      ul, li{
+        color: #0abde3;
+        margin: 5px 0;
+        line-height: 1.5; }
+      strong{
+        color: #222f3e;}
+      li::marker{
+        color: #ff4757; }
+      p{
+        color: #26de81;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      table{
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+        border: 1px solid black;
+      }
+      tr, td, th{
+        padding: 10px 0;
+        border: 1px solid black;
+      }
+      body{
+        background-color: #dfe4ea;
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+      }
+     p, samp{
+        text-align: center;
+        font-size: 18px;
+      }
+      footer{
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        border-top: 1px solid #ccc;
+      }
+  
+  </style></head>
   <body>
     <header>
-      <h1>Professional Admin Dashboard (pure HTML)</h1>
-      <nav>
-        <details>
-          <summary>Main Navigation Menu (Click to Expand)</summary>
-          <ul>
-            <li><a href="#project">Project Inventory</a></li>
-            <li><a href="#registration">Advanced Registration</a></li>
-            <li><a href="#faq">Frequently Asked Questions</a></li>
-            <li><a href="#media">Media Gallery</a></li>
-          </ul>
-        </details>
-      </nav>
+      <figure>
+        <img src="1772353209185.png" width="180" height="230" alt="joy profile picture" title="joy's photo"><figcaption>Fig 1. My profile picture</figcaption>
+      </figure>
     </header>
+    <!--my personal information start-->
     <hr>
-    
     <main>
-      <section id="inventory">
-        <h2>Project Inventory Report</h2>
-        <table border="2" cellpadding="10" cellspacing="0">
-          <colgroup>
-            <col style="background-color:#f2f2f2" span="1">
-          </colgroup>
-          <thead>
-            <tr>
-              <th rowspan="2">Project Title</th>
-              <th colspan="2">Details</th>
-              <th rowspan="2">Completion Progress</th>
+    <div class="personal-info">
+      <h2>Personal Profile</h2>
+      <ul>
+        <li><strong>Name: </strong>Joy Ghorami</li>
+        <li><strong>Profession: </strong>Aspiring Full-Stack Web Developer & Cybersecurity Specialist.</li>
+        <li><strong>Date Of Birth: </strong>March 10 2001.</li>
+        <li><strong>Nationality: </strong> Bangladeshi</li>
+        <li><strong>Religion: </strong>Hindu</li>
+        <li><strong>Gender: </strong>Male</li>
+      </ul>
+      <!--my personal information end-->
+    </div>
+    <section id="career-objective">
+      <!--career skills deailts start-->
+      <h2>Career Objective</h2>
+      
+    <blockquote>
+      <p>&quot;To establish a successful career as a <strong>Full-Stack Software Engineer</strong> and <strong><cite>Cyber Security Expert</cite></strong> over the next 5 to <ins>10 years</ins>. Currently focusing on mastering web technologies using mobile-first learning tools and building secure, scalable applications.&quot;</p>
+      </blockquote>
+    <!--career skills deailts end-->
+    </section>
+    <section id="information">
+      <!--personal information start-->
+      <h2>Contact Information</h2>
+      <address style="font-style:normal">
+        <ul>
+          <li><strong>Present Address: </strong>Vill: Ghoradair, P.O: Mollahat, Dist: Bagerhat, Bangladesh.</li>
+          <li><strong>Permanent Address: </strong>Vill: Ghoradair, P.O: Mollahat, Dist: Bagerhat, Bangladesh.</li>
+          <li><strong>Email: </strong><a href="mailto:joyghorami432@gmail.com" target="_blank" title="click to see my email">joyghorami432@gmail.com</a></li>
+          <li>
+            <strong>Github: </strong><a href="https://github.com/joy-framework/joy" target="_blank" title="click to see my project">github.com/joy-webdeveloper</a>
+          </li>
+        </ul>
+      </address>
+            <!--personal information end-->
+    </section>
+    
+    <section id="Education">
+      <!-- educational certificate start-->
+      <h2>Educational Background</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Subject</th>
+            <th>Passing Year</th>
+            <th>GPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Science</td>
+            <td>HSC</td>
+            <td>2023</td>
+            <td>4.08</td>
+          </tr>
+           <tr>
+            <td>Science</td>
+            <td>SSC</td>
+            <td>2019</td>
+            <td>4.78</td>
             </tr>
             <tr>
-              <th>Category</th>
-              <th>Budget</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>E-Commerce System</td>
-              <td>Web Development</td>
-              <td>$1,500</td>
-              <td>
-                <progress value="75" max="100"></progress> 75%
-              </td>
-            </tr>
-             <tr>
-              <td>Personal Portfolio</td>
-              <td>Web Design</td>
-              <td>$400</td>
-              <td>
-                <progress value="100" max="100"></progress> 100%
-              </td>
-            </tr>
+            <td>Bachelor of Science</td>
+            <td>Honours</td>
+            <td>2026</td>
+            <td
+            ><progress value="20" min="0" max="100"></progress>
+               20%
+            </td>
+          </tr>
           </tbody>
-          <tfoot>
+          
+           <tfoot>
             <tr>
-              <td colspan="3"><strong>Total Estimated Valuation</strong></td>
-              <td><strong>$1,900</strong></td>
+              <td colspan="3"><strong>Total Score</strong></td>
+              <td><strong>8.86</strong></td>
             </tr>
           </tfoot>
         </table>
-        
+    </section>
+      <!-- educational certificate end..-->
+      <section id="skills">
+        <!--my technical skills start-->
+        <h2>Technical Skills</h2>
+        <article>
+          <ul>
+            <li><strong>Web Technologies: </strong>HTML5 (Completed), CSS3 (Learning), Basic JavaScript logic.</li>
+            <li><strong>Tools & Platforms: </strong>Acode Editor (Mobile), Git, GitHub, Bitget (Digital Assets).</li>
+            <li><strong>Other Skills: </strong>Image Editing, PC-less Mobile Coding, Hardware Troubleshooting.</li>
+          </ul>
+        </article>
       </section>
-      <hr>
-      
-      <section id="registration">
-        <h2>User Profile Configuration</h2>
-  
-        <form action="#" method="post">
-           <fieldset>
-          <legend>Technical Identity & Skills</legend>
-          <label for="country"><strong>Select Country:</strong></label><br>
-          <input list="countries" id="country" name="country" placeholder="Start typing country...">
-          
-            <datalist id="countries">
-              <option value="Bangladesh"></option>
-              <option value="USA"></option>
-              <option value="United Kingdom"></option>
-              <option value="Canada"></option>
-              <option value="Germany"></option>
-            </datalist>
-            <br><br>
-            
-            <label for="skills-select" id="skills"><strong>Primary Tech Stack:</strong></label><br>
-            <select id="skills-select" name="skills-select">
-              <optgroup label="Frontend Engineering">
-                <option value="html">HTML5/CSS3</option>
-                <option value="react">React Js</option>
-                <option value="js">Pure Javascript</option>
-              </optgroup>
-              
-              <optgroup label="Backend Engineering">
-                <option value="node">Node Js</option>
-                <option value="php">PHP/Laravel</option>
-                <option value="python">Python/Django</option>
-              </optgroup>
-            </select>
-            <br><br>
-            
-            <label for="proficiency"><strong>Proficiency Level (0-100%):</strong></label><br>
-            <input type="range" id="proficiency" name="proficiency" min="0" max="100" value="50">
-            <br><br>
-            <label for="theme-color"><strong>Preferred Dashboard Theme:</strong></label><br>
-            <input type="color" id="theme-color" name="theme-color" value="red"><br><br>
-            <button type="submit">Submit Settings</button>
-            <button type="reset">Reset Form</button>
-            
-          </fieldset>
-        </form>
-      </section>
-      <hr>
-      <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-          <summary>Why is HTML important for developers?</summary>
-          <p>HTMl Provides the structure of the web. Without it, there would be no content to style or interact with.</p>
-        </details>
-        
-        <details>
-          <summary>What is the benefit of Semantic Tags?</summary>
-          <p>Semantic tags like &lt;main&gt;, &lt;article&gt;, and &lt;section&gt; improve SEO and help screen readers understand your page better.</p>
-        </details>
-      </section>
-      <hr>
-      
-      <section id="media">
-        <h2>Project Demo Video</h2>
-        <figure>
-        <video controls width="200" poster="thumbnail.jpg">
-          <source src="VID_20260222_211548_597.mp4" type="video/mp4">
-          <track src="captions_en.vtt" srclang="english" kind="subtitles" label="english">
-          your browser does not support the video tag!
-        </video>
-        <figcaption>Video sample: Software Engineer Workflow</figcaption>
-        </figure>
-        
-        <p>Listen to Introductory Audio:</p>
-        <audio controls>
-          <source src="joy ring tone.mp3" type="audio/mpeg">
-          audio playback is not support?
-        </audio>
-      </section>
-      <hr>
-      <section id="integration">
-        <h2>External Integration</h2>
-        <p>Embedded Content Preview:</p>
-        <iframe src="about:blank" height="200" width="100%" title="reference document"></iframe>
-        <p><small>*Replace &quot;about:blank&quot; with your own &quot;portfolio.html&quot; to see it inside this box</small></p>
-      </section>
+      <!-- Technical skills start end-->
+      <section id="personal-details">
+        <!--personal info start-->
+        <h2>Personal Details</h2>
+        <section id="details">
+          <aside>
+            <ul>
+              <li><strong>Father's Name: </strong>Robindronath Ghorami</li>
+              <li><strong>Mother's Name: </strong>Provati Ghorami</li>
+              <li><strong>Marital Status: </strong> Unmarried</li>
+              <li><strong>Blood Group: </strong>O-</li>
+              <li><strong>Languages: </strong>Bengali,(Native) English,(Basic/Technical)</li>
+            </ul>
+          </aside>
+          </section>
+         <!--personal info end-->
+         
+      <!-- my Projects Achievements start-->
+            <section id="project">
+              <h2>Projects & Achievements</h2>
+              <ul>
+                <li><strong>Personal Portfolio Website: </strong>Developed using HTML5 & CSS3</li>
+                <li><Strong>Simple Calculator: </Strong>Created Functional calculator structure using HTML.</li>
+                <li><strong>GitHub Repository: </strong>Successfully managing code repositories via smartphone.</li>
+              </ul>
+          </section>
+        <footer>
+          <!-- my Projects Achievements end-->
+          <p><em>Developed By</em> &copy; Joy Ghorami</p><samp>Dhaka, Bangladesh</samp>
+        </footer>
     </main>
-    <br>
-    <footer>
-     <p>&copy; 2026 Joy Ghorami | Software Engineering Aspirant</p>
-      <address>
-        Written by <a href="mailto:joygorami432@gmail.com" target="_blank" rel="noopener noreferrer"> Joy Ghorami</a><br>
-        Dhaka, Bangladesh
-      </address>
-    </footer>
+         <!--The end-->
   </body>
 </html>
