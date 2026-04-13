@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> 
+    <style type="text/css">
+      :root {
+     --accent: #22c55e;
+    --accent-bg: #f7b731;
+    --accent-color: #3b82f6;
+    --primary: #7d5fff;
+    --primary-color: #ff4757;
+    --secondary-color: #2f3542;
+    --card-bg: #34495e;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --text-main: #333333;
+    --text-muted: #666666;
+        --transition: all 0.3s cubic-bezier(0.12, 0.654, 0.234, 0.345);
+      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+    body{
+      background: url('1772353209185.png');
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .container{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-container{
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 20px 15px -5px rgba(0, 0, 0, 0.03);
+      transition: var(--transition);
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .title-section{
+      color: var(--text-main);
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <section id="form-info">
+          <form>
+          <div class="form-container">
+            
+          <div class="input-group">
+              <h1 class="title-section">Login</h1>
+              <label for="informstion"></label>
+              <input type="text" id="information" name="information" placeholder="Username">
+              <span class="icon"><i class="fa-regular fa-user"></i></span>
+            </div>
+            
+            <div class=" input-group">
+                <label for="password"></label>
+              <input type="password" id="password" name="password" placeholder="password">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            </div>
+            
+            <div class="checkbox">
+              <label for="c-box"></label>
+              <input type="checkbox" id="c-box">
+              <span class="span-popup">Remembar me</span>
+              <span class="span-popup">Forget your password?</span>
+            </div>
+            
+            <div class="btn-menu">
+            <button type="submit">Login</button>
+            <span class="popup">Don't have a Account? <a href="#Register">Register</a></span>
+            </div>
+            
+            </div>
+          </form>
+        </section>
+      </div>
+  </body>
+</html>
