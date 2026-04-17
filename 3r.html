@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Button Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style type="text/css">
+    :root {
+        --bg-color: #333;
+        --fb-color: #1877f2;
+        --tw-color: #1da1f2;
+        --go-color: #db4437;
+        --in-color: #e4405f;
+        --text-dim: #333;
+      }
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+       font-family: 'Inter', sans-serif;
+     }     
+    body{
+       background: var(--bg-color);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       min-height: 100vh;
+       margin: 0;
+       width: 100%;
+       overflow-x: hidden;
+    }   
+    .btn-container{
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+       margin: 0;
+    }    
+    .btn-isometric{
+       display: block;
+       position: relative;
+       background: #fff;
+       width: 220px;
+       height: 80px;
+       transform: perspective(1000px) rotateX(45deg) rotateZ(-30deg) skew(10deg);
+       transform-style: preserve-3d;
+       box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.5);
+       text-decoration: none;
+       transition: all 0.5s ease-in-out;
+    } 
+    .btn-isometric::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 15px;
+      height: 100%;
+      background: #bbb;
+      transform-origin: right;
+      transform: skewY(-45deg);
+      pointer-events: none;
+      z-index: -1;
+      transition: all 0.5s ease-in-out;
+    }
+    .btn-isometric::after{
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background: #999;
+      transform-origin: top;
+      transform: skewX(-45deg);
+      pointer-events: none;
+      z-index: -1;
+      transition: all 0.5s ease-in-out;
+    }
+    .btn-isometric:hover{
+      transform: perspective(1000px) rotateX(45deg) rotateZ(-30deg) skew(10deg) translate(20px, -20px);
+      box-shadow: -50px 50px 50px rgba(24, 119, 242, 0.3);
+    }
+    .btn-isometric span{
+      position: absolute;
+      /*top: 50%;*/
+      /*left: 50%;*/
+      /*transform: translate(-50%, -50%) skewY(-5deg);*/
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      pointer-events: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.5s ease-in-out;
+      z-index: 1;
+      /*transform: skewY(-5deg);*/
+      transform: translateZ(0px);
+    }
+    .btn-isometric:hover span{
+      transform: translateZ(10px) translateY(10px);
+    }
+    .btn-container .fa-brands{
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 800;
+      pointer-events: none;
+      padding: 0;
+      margin: 0;
+    }
+    .btn-isometric:nth-child(1):hover{
+      background: var(--fb-color);
+    }
+    .btn-isometric:nth-child(1):hover::before{
+      background: #1254a3;
+    }
+     .btn-isometric:nth-child(1):hover::after{
+      background: #1254a3;
+    }
+    
+    .btn-isometric:nth-child(2):hover{
+      background: var(--tw-color);
+    }
+    .btn-isometric:nth-child(2):hover::before{
+      background: #167fc0;
+    }
+     .btn-isometric:nth-child(2):hover::after{
+      background: #167fc0;
+    }
+    
+    .btn-isometric:nth-child(3):hover{
+      background: var(--go-color);
+    }
+    .btn-isometric:nth-child(3):hover::before{
+      background: #a33228;
+    }
+     .btn-isometric:nth-child(3):hover::after{
+      background: #a33228;
+    }
+    
+     .btn-isometric:nth-child(4):hover{
+      background: var(--in-color);
+    }
+    .btn-isometric:nth-child(4):hover::before{
+      background: #b13149;
+    }
+     .btn-isometric:nth-child(4):hover::after{
+      background: #b13149;
+    }
+    .btn-isometric:hover span{
+      color: #fff;
+    }
+    .btn-isometric:active{
+      transform: perspective(1000px) rotateX(45deg) rotateZ(-30deg) skew(10deg) translate(5px, -5px);
+      box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+          
+  </style>
+    
+  </head>
+  <body>
+       <header>
+        <div class="btn-container">
+          
+          <a href="#" class="btn-isometric"><span><i class="fa-brands fa-facebook-f"></i>- Facebook</span>
+          </a>
+           <a href="#" class="btn-isometric">
+            <span><i class="fa-brands fa-twitter"></i>- Twitter</span>
+          </a>
+
+          <a href="#" class="btn-isometric">
+            <span><i class="fa-brands fa-google-plus-g"></i>- Google</span>
+          </a>
+
+          <a href="#" class="btn-isometric instagram">
+            <span><i class="fa-brands fa-instagram"></i>- Instagram</span>
+         </a>
+        </div>
+      </header>
+  </body>
+</html>
